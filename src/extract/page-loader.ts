@@ -1,6 +1,6 @@
 import ipaddr from "ipaddr.js";
-import { UrlValidationError } from "../core/errors.ts";
-import type { PageLoadOptions } from "../core/types.ts";
+import { UrlValidationError } from "../core/errors.js";
+import type { PageLoadOptions } from "../core/types.js";
 
 const BLOCKED_SCHEMES = [
   "file:",

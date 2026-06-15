@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
-import { createSearXNGFetchSearch } from "../searxng.ts";
-import { SearchProviderError } from "../../core/errors.ts";
+import { createSearXNGFetchSearch } from "../searxng.js";
+import { SearchProviderError } from "../../core/errors.js";
 
 function mockFetch(status: number, body: unknown, statusText?: string) {
   return vi.fn().mockResolvedValue({

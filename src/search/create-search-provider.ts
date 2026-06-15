@@ -1,8 +1,8 @@
 import { z } from "zod";
-import type { SearchResult } from "../core/types.ts";
+import type { SearchResult } from "../core/types.js";
 import {
   SearchProviderResponseError,
-} from "../core/errors.ts";
+} from "../core/errors.js";
 
 export interface CreateSearchProviderOptions<TResponse> {
   /** Human-readable provider name used in error messages (e.g. "Tavily"). */

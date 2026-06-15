@@ -5,11 +5,11 @@ import type {
   PageLoadOptions,
   PageRenderOptions,
   Summarizer,
-} from "../core/types.ts";
-import { UrlValidationError } from "../core/errors.ts";
-import { sanitizeHtml, MIN_CONTENT_LENGTH } from "./sanitize-html.ts";
-import { loadPageHtml, validateUrl } from "./page-loader.ts";
-import { PageExtractor, type ExtractorInput } from "./extractors/base.ts";
+} from "../core/types.js";
+import { UrlValidationError } from "../core/errors.js";
+import { sanitizeHtml, MIN_CONTENT_LENGTH } from "./sanitize-html.js";
+import { loadPageHtml, validateUrl } from "./page-loader.js";
+import { PageExtractor, type ExtractorInput } from "./extractors/base.js";
 
 export interface ExtractPageDeps {
   fetch?: typeof globalThis.fetch;

@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
-import { createBraveSearch } from "../brave.ts";
-import { SearchProviderError, SearchProviderConfigError } from "../../core/errors.ts";
+import { createBraveSearch } from "../brave.js";
+import { SearchProviderError, SearchProviderConfigError } from "../../core/errors.js";
 
 function mockFetch(status: number, body: unknown, statusText?: string) {
   return vi.fn().mockResolvedValue({

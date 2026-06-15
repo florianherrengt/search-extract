@@ -4,7 +4,7 @@ import {
   setRateLimiter,
   resetRateLimiter,
   getRateLimiter,
-} from "../rate-limit.ts";
+} from "../rate-limit.js";
 
 describe("rateLimiter", () => {
   beforeEach(() => {

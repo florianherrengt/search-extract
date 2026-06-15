@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { formatSearchResults } from "../format.ts";
+import { formatSearchResults } from "../format.js";
 
 describe("formatSearchResults", () => {
   it("returns 'No results found.' for empty array", () => {

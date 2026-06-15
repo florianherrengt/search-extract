@@ -2,13 +2,13 @@ import { describe, expect, it, vi, beforeEach } from "vitest";
 import {
   createSearchExtractEngine,
   type SearchExtractEngine,
-} from "../engine.ts";
+} from "../engine.js";
 import {
   SearchProviderConfigError,
   SearchProviderError,
   SearchProviderResponseError,
-} from "../errors.ts";
-import { setRateLimiter, resetRateLimiter } from "../rate-limit.ts";
+} from "../errors.js";
+import { setRateLimiter, resetRateLimiter } from "../rate-limit.js";
 import PQueue from "p-queue";
 
 interface MockResponse {

@@ -1,5 +1,5 @@
 import { load } from "cheerio";
-import { PageExtractor, type ExtractorInput, type ExtractorResult } from "./base.ts";
+import { PageExtractor, type ExtractorInput, type ExtractorResult } from "./base.js";
 
 function isShopifyUrl(url: URL): boolean {
   const host = url.hostname;

@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
-import { createExaSearch } from "../exa.ts";
-import { SearchProviderError, SearchProviderConfigError } from "../../core/errors.ts";
+import { createExaSearch } from "../exa.js";
+import { SearchProviderError, SearchProviderConfigError } from "../../core/errors.js";
 
 function mockFetch(status: number, body: unknown, statusText?: string) {
   return vi.fn().mockResolvedValue({

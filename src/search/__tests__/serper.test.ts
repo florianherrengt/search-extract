@@ -1,6 +1,6 @@
 import { describe, expect, it, vi } from "vitest";
-import { createSerperSearch } from "../serper.ts";
-import { SearchProviderError, SearchProviderConfigError } from "../../core/errors.ts";
+import { createSerperSearch } from "../serper.js";
+import { SearchProviderError, SearchProviderConfigError } from "../../core/errors.js";
 
 function mockFetch(status: number, body: unknown, statusText?: string) {
   return vi.fn().mockResolvedValue({

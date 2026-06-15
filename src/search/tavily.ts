@@ -2,12 +2,12 @@ import { z } from "zod";
 import {
   createSearchProvider,
   formatSearchHttpError,
-} from "./create-search-provider.ts";
+} from "./create-search-provider.js";
 import {
   SearchProviderError,
   SearchProviderConfigError,
-} from "../core/errors.ts";
-import type { SearchResult } from "../core/types.ts";
+} from "../core/errors.js";
+import type { SearchResult } from "../core/types.js";
 
 const API_BASE_URL = "https://api.tavily.com";
 

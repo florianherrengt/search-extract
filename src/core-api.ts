@@ -20,6 +20,7 @@ export {
   SearchProviderConfigError,
   SearchProviderError,
   SearchProviderResponseError,
+  AggregateSearchError,
   UrlValidationError,
 } from "./core/errors.js";
 
@@ -75,12 +76,3 @@ export { ShopifyExtractor } from "./extract/extractors/shopify.js";
 
 export { extractPage } from "./extract/extract-page.js";
 export type { ExtractPageDeps } from "./extract/extract-page.js";
-
-export {
-  createAiSdkSummarizer,
-  createAiSdkSearchTool,
-  createAiSdkExtractPageContentTool,
-} from "./adapters/ai-sdk.js";
-
-export { createTauriPageLoader } from "./adapters/tauri.js";
-export type { TauriLoaderCallbacks } from "./adapters/tauri.js";

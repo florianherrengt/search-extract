@@ -1,4 +1,4 @@
-import type { PageLoader, PageLoadOptions, PageRenderOptions } from "../core/types.ts";
+import type { PageLoader, PageLoadOptions, PageRenderOptions } from "../core/types.js";
 
 export interface TauriLoaderCallbacks {
   fetchHtml: (url: string, abortSignal?: AbortSignal) => Promise<string | null>;

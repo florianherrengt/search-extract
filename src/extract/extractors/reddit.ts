@@ -1,7 +1,7 @@
 import { load, type CheerioAPI } from "cheerio";
 import type { Element } from "domhandler";
-import { PageExtractor, type ExtractorInput, type ExtractorResult } from "./base.ts";
-import { parseRedditJson, type RedditComment, type RedditPost } from "./reddit-json-parser.ts";
+import { PageExtractor, type ExtractorInput, type ExtractorResult } from "./base.js";
+import { parseRedditJson, type RedditComment, type RedditPost } from "./reddit-json-parser.js";
 
 function isRedditUrl(url: URL): boolean {
   const host = url.hostname;

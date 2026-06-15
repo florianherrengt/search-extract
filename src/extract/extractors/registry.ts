@@ -1,3 +1,3 @@
-import { PageExtractor } from "./base.ts";
+import { PageExtractor } from "./base.js";
 
 export const extractors: PageExtractor[] = [];

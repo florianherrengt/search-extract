@@ -1,6 +1,6 @@
 import { describe, expect, it, vi, beforeEach } from "vitest";
-import type { SearchExtractEngine } from "../../core/engine.ts";
-import type { SearchResult, Summarizer, ExtractResult } from "../../core/types.ts";
+import type { SearchExtractEngine } from "../../core/engine.js";
+import type { SearchResult, Summarizer, ExtractResult } from "../../core/types.js";
 
 const aiMocks = vi.hoisted(() => ({
   streamText: vi.fn(),
@@ -20,7 +20,7 @@ import {
   createAiSdkSummarizer,
   createAiSdkSearchTool,
   createAiSdkExtractPageContentTool,
-} from "../ai-sdk.ts";
+} from "../ai-sdk.js";
 
 function makeMockEngine(overrides: {
   search?: (provider: string, query: string, opts?: { signal?: AbortSignal }) => Promise<SearchResult[]>;

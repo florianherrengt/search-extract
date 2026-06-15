@@ -1,12 +1,12 @@
 import { tool, zodSchema, streamText, type LanguageModel, type Tool } from "ai";
 import { z } from "zod";
-import type { Summarizer } from "../core/types.ts";
-import { searchQueryInputSchema } from "../core/types.ts";
-import { UrlValidationError } from "../core/errors.ts";
-import { formatSearchResults } from "../search/format.ts";
-import { validateUrl } from "../extract/page-loader.ts";
-import type { SearchExtractEngine } from "../core/engine.ts";
-import type { SearchProviderName } from "../core/types.ts";
+import type { Summarizer } from "../core/types.js";
+import { searchQueryInputSchema } from "../core/types.js";
+import { UrlValidationError } from "../core/errors.js";
+import { formatSearchResults } from "../search/format.js";
+import { validateUrl } from "../extract/page-loader.js";
+import type { SearchExtractEngine } from "../core/engine.js";
+import type { SearchProviderName } from "../core/types.js";
 
 const SUMMARY_SYSTEM_PROMPT =
   "You are a research assistant. Extract and summarize the key information from this page content. Be concise but thorough. Preserve factual details, names, dates, and numbers.";

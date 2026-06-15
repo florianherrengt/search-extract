@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
-import { createSearchProvider, formatSearchHttpError } from "../create-search-provider.ts";
+import { createSearchProvider, formatSearchHttpError } from "../create-search-provider.js";
 import { z } from "zod";
-import { SearchProviderResponseError } from "../../core/errors.ts";
+import { SearchProviderResponseError } from "../../core/errors.js";
 
 describe("createSearchProvider", () => {
   const TestSchema = z.object({

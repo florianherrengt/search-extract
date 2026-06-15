@@ -7,18 +7,18 @@ import {
   type Summarizer,
   type ExtractOptions,
   type ExtractResult,
-} from "./types.ts";
-import { SearchProviderConfigError, AggregateSearchError } from "./errors.ts";
-import { rateLimit } from "./rate-limit.ts";
-import { createBraveSearch, type BraveConfig } from "../search/brave.ts";
-import { createExaSearch, type ExaConfig } from "../search/exa.ts";
-import { createSerperSearch, type SerperConfig } from "../search/serper.ts";
-import { createTavilySearch, type TavilyConfig } from "../search/tavily.ts";
+} from "./types.js";
+import { SearchProviderConfigError, AggregateSearchError } from "./errors.js";
+import { rateLimit } from "./rate-limit.js";
+import { createBraveSearch, type BraveConfig } from "../search/brave.js";
+import { createExaSearch, type ExaConfig } from "../search/exa.js";
+import { createSerperSearch, type SerperConfig } from "../search/serper.js";
+import { createTavilySearch, type TavilyConfig } from "../search/tavily.js";
 import {
   createSearXNGFetchSearch,
   type SearXNGConfig,
-} from "../search/searxng.ts";
-import type { PageExtractor } from "../extract/extractors/base.ts";
+} from "../search/searxng.js";
+import type { PageExtractor } from "../extract/extractors/base.js";
 
 type SearchFn = (query: string, signal?: AbortSignal) => Promise<SearchResult[]>;
 
@@ -177,7 +177,7 @@ export function createSearchExtractEngine(
       url: string,
       options?: ExtractOptions,
     ): Promise<ExtractResult> {
-      const { extractPage } = await import("../extract/extract-page.ts");
+      const { extractPage } = await import("../extract/extract-page.js");
       return extractPage(url, options, getExtractDeps(config));
     },
   };

@@ -1,5 +1,5 @@
 import { load, type CheerioAPI } from "cheerio";
-import { PageExtractor, type ExtractorInput, type ExtractorResult } from "./base.ts";
+import { PageExtractor, type ExtractorInput, type ExtractorResult } from "./base.js";
 
 const AMAZON_TLDS = [
   "amazon.com",

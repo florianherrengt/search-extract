@@ -1,4 +1,4 @@
-import type { PageLoader } from "../../core/types.ts";
+import type { PageLoader } from "../../core/types.js";
 
 export interface ExtractorInput {
   url: URL;
