@@ -23,14 +23,17 @@
   },
   "homepage": "https://github.com/florianherrengt/search-extract#readme",
   "dependencies": {
-    "ai": "^6.0.185",
     "cheerio": "^1.2.0",
     "ipaddr.js": "^2.4.0",
     "p-queue": "^9.3.0",
     "zod": "^4.4.3"
   },
+  "peerDependencies": {
+    "ai": "^6.0.185"
+  },
   "devDependencies": {
     "@types/node": "^25.9.0",
+    "ai": "^6.0.185",
     "typescript": "~5.6.2",
     "vitest": "^4.1.7"
   }
