@@ -1,0 +1,37 @@
+{
+  "name": "@deep-search/search-extract",
+  "version": "0.1.0",
+  "description": "Runtime-agnostic web search and page content extraction engine.",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "tsconfig.json"
+  ],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/florianherrengt/search-extract.git"
+  },
+  "bugs": {
+    "url": "https://github.com/florianherrengt/search-extract/issues"
+  },
+  "homepage": "https://github.com/florianherrengt/search-extract#readme",
+  "dependencies": {
+    "ai": "^6.0.185",
+    "cheerio": "^1.2.0",
+    "ipaddr.js": "^2.4.0",
+    "p-queue": "^9.3.0",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.0",
+    "typescript": "~5.6.2",
+    "vitest": "^4.1.7"
+  }
+}
