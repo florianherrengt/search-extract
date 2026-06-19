@@ -84,3 +84,9 @@ export {
 
 export { createTauriPageLoader } from "./adapters/tauri.js";
 export type { TauriLoaderCallbacks } from "./adapters/tauri.js";
+export {
+  SCRAPE_DO_API_URL,
+  createScrapeDoPageLoader,
+  fetchScrapeDoHtml,
+} from "./adapters/scrape-do.js";
+export type { ScrapeDoPageLoaderConfig } from "./adapters/scrape-do.js";

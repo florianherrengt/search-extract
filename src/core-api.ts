@@ -76,3 +76,10 @@ export { ShopifyExtractor } from "./extract/extractors/shopify.js";
 
 export { extractPage } from "./extract/extract-page.js";
 export type { ExtractPageDeps } from "./extract/extract-page.js";
+
+export {
+  SCRAPE_DO_API_URL,
+  createScrapeDoPageLoader,
+  fetchScrapeDoHtml,
+} from "./adapters/scrape-do.js";
+export type { ScrapeDoPageLoaderConfig } from "./adapters/scrape-do.js";
